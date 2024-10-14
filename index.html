@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What does Sahel bench?</title>
+</head>
+<body>
+    <h1>What does Sahel bench?</h1>
+    <p>Enter the passcode to find out:</p>
+
+    <input type="text" id="passcode" placeholder="Enter the passcode">
+    <button onclick="checkPasscode()">Submit</button>
+    
+    <p id="result"></p>
+
+    <script>
+        function checkPasscode() {
+            var passcode = document.getElementById("passcode").value;
+            var result = document.getElementById("result");
+            if (passcode === "240") {
+                result.innerHTML = "Congratulations, bitch ni";
+            } else {
+                result.innerHTML = "Incorrect! Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
